@@ -1,0 +1,23 @@
+{
+  "properties": [
+    {
+      "name": "server.servlet.session.cookie.same-site",
+      "type": "java.lang.String",
+      "description": "Description for server.servlet.session.cookie.same-site."
+    },
+    {
+      "name": "server.servlet.session.session.persistent:true",
+      "type": "java.lang.String",
+      "description": "Description for server.servlet.session.session.persistent:true."
+    },
+    {
+      "name": "server.servlet.session.session.persistent:true",
+      "type": "java.lang.String",
+      "description": "Description for server.servlet.session.session.persistent:true."
+    },
+    {
+      "name": "ip",
+      "type": "java.lang.String",
+      "description": "Description for ip."
+    }
+  ] }
