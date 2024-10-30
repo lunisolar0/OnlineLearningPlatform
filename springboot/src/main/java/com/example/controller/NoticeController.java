@@ -5,6 +5,7 @@ import com.example.entity.Notice;
 import com.example.service.NoticeService;
 import com.github.pagehelper.PageInfo;
 import org.springframework.web.bind.annotation.*;
+
 import javax.annotation.Resource;
 import java.util.List;
 
@@ -17,6 +18,7 @@ public class NoticeController {
 
     @Resource
     private NoticeService noticeService;
+
 
     /**
      * 新增
@@ -67,7 +69,7 @@ public class NoticeController {
      * 查询所有
      */
     @GetMapping("/selectAll")
-    public Result selectAll(Notice notice ) {
+    public Result selectAll(Notice notice) {
         List<Notice> list = noticeService.selectAll(notice);
         return Result.success(list);
     }
@@ -83,12 +85,8 @@ public class NoticeController {
         return Result.success(page);
     }
 
-    /**
-     * 确认通知
-     * @return 成功
-     */
-    @GetMapping
-    public Result confirm(@PathVariable Integer id){
+    @GetMapping("/confirm/{id}")
+    public Result confirm(@PathVariable Integer id) {
         noticeService.confirm(id);
         return Result.success();
     }

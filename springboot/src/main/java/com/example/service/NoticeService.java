@@ -7,8 +7,11 @@ import com.example.mapper.NoticeMapper;
 import com.example.utils.TokenUtils;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+
 import javax.annotation.Resource;
+
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 /**
@@ -19,6 +22,8 @@ public class NoticeService {
 
     @Resource
     private NoticeMapper noticeMapper;
+
+
 
     /**
      * 新增
@@ -77,9 +82,9 @@ public class NoticeService {
     }
 
 
-    public void confirm(Integer id){
+    public void confirm(Integer id) {
         Notice update = noticeMapper.selectById(id);
-        update.setConfirmCount(update.getConfirmCount()+1);
+        update.setConfirmCount(update.getConfirmCount() + 1);
         noticeMapper.updateById(update);
     }
 }

@@ -4,7 +4,6 @@ package com.example.service;
 
 import cn.hutool.core.date.DateUtil;
 import com.example.entity.Comment;
-import com.example.entity.Course;
 import com.example.mapper.CommentMapper;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -15,7 +14,6 @@ import java.util.List;
 
 /**
  * @author : Shiranui
- * @date : $ $
  */
 @Service
 public class CommentService {
