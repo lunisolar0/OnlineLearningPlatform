@@ -4,6 +4,7 @@ import com.example.common.Result;
 import com.example.entity.Notice;
 import com.example.service.NoticeService;
 import com.github.pagehelper.PageInfo;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -12,6 +13,7 @@ import java.util.List;
 /**
  * 公告信息表前端操作接口
  **/
+@Slf4j
 @RestController
 @RequestMapping("/notice")
 public class NoticeController {
@@ -87,6 +89,7 @@ public class NoticeController {
 
     @GetMapping("/confirm/{id}")
     public Result confirm(@PathVariable Integer id) {
+        log.info("确认id：{}",id);
         noticeService.confirm(id);
         return Result.success();
     }

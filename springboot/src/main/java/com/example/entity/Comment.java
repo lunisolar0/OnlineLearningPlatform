@@ -28,8 +28,5 @@ public class Comment implements Serializable {
     private String userName;
     private String userAvatar;
     private String departmentName;
-
-    public void setChildren(List<Comment> children) {
-
-    }
+    private List<Comment> children;
 }

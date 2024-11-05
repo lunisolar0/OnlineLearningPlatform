@@ -19,7 +19,7 @@
         <el-table-column prop="content" label="内容" show-overflow-tooltip></el-table-column>
         <el-table-column prop="time" label="创建时间"></el-table-column>
         <el-table-column prop="user" label="创建人"></el-table-column>
-
+        <el-table-column prop="confirmCount" label="收到人数"></el-table-column>
         <el-table-column label="操作" width="180" align="center">
           <template v-slot="scope">
             <el-button plain type="primary" @click="handleEdit(scope.row)" size="mini">编辑</el-button>

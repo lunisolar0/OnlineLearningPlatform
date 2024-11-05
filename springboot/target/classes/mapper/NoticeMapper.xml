@@ -71,6 +71,9 @@
             <if test="user != null">
                 user = #{user},
             </if>
+            <if test="confirmCount!=null">
+                confirm_count=#{confirmCount},
+            </if>
         </set>
         where id = #{id}
     </update>

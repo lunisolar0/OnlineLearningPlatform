@@ -34,6 +34,7 @@ const routes = [
       { path: 'home', name: 'Home', meta: { name: '系统首页' }, component: () => import('../views/front/Home') },
       { path: 'person', name: 'Person', meta: { name: '个人信息' }, component: () => import('../views/front/Person') },
       { path: 'course', name: 'Course', meta: { course: '课程中心' }, component: () => import('../views/front/Course.vue') },
+      { path: 'notice', name: 'Notice', meta: { notice: '通知' }, component: () => import('../views/front/Notice.vue') },
       { path: 'courseDetail', name: 'CourseDetail', meta: { name: '课程详情' }, component: () => import('../views/front/CourseDetail') },
     ]
   },
