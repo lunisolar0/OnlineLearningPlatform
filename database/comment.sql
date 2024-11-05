@@ -8,7 +8,8 @@ create table comment
     content   varchar(255) null comment '评论内容',
     parent_id int          null comment '父ID'
 )
-    comment '评论信息表' collate = utf8mb4_unicode_ci;
+    comment '评论信息表' engine = InnoDB
+                         collate = utf8mb4_unicode_ci;
 
 INSERT INTO study.comment (id, user_id, course_id, time, content, parent_id) VALUES (35, 1, 4, '2024-11-04 23:53:02', '好看', 0);
 INSERT INTO study.comment (id, user_id, course_id, time, content, parent_id) VALUES (36, 1, 4, '2024-11-04 23:53:15', '豪堪', 35);

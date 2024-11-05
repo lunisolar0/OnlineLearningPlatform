@@ -11,13 +11,14 @@ create table course
     recommend varchar(255) null comment '是否推荐',
     time      varchar(255) null comment '发布时间'
 )
-    comment '课程信息表' collate = utf8mb4_unicode_ci;
+    comment '课程信息表' engine = InnoDB
+                         collate = utf8mb4_unicode_ci;
 
 INSERT INTO study.course (id, img, name, content, type, video, file, recommend, time) VALUES (4, 'http://localhost:9090/files/1730736062469-1730360835130-a621e48ac745f739f8c5b71b515bf390_6511269016252122211.jpg', '1', '<p>1</p>', 'VIDEO', 'http://localhost:9090/files/1730735333059-intro.mp4', '1', '是', '2024-11-04');
 INSERT INTO study.course (id, img, name, content, type, video, file, recommend, time) VALUES (5, 'http://localhost:9090/files/1730735389795-1730365365817-oVS4M1YAigdMdGj.thumb.400_0.png', '2', '<p>2</p>', 'VIDEO', 'http://localhost:9090/files/1730735734697-1730033351256-2.mp4', '2', '否', '2024-11-04');
 INSERT INTO study.course (id, img, name, content, type, video, file, recommend, time) VALUES (6, 'http://localhost:9090/files/1730735751857-1730364199955-aLSjg4qVu0WDw9N.jpg', '3', '<p>3</p>', 'TEXT', null, '3', '否', '2024-11-04');
 INSERT INTO study.course (id, img, name, content, type, video, file, recommend, time) VALUES (7, 'http://localhost:9090/files/1730735769285-1730364215766-d9d3cdab42b2252c2f3879b4ae2d9131_9118388853183177991.jpg', '4', '<p>4</p>', 'TEXT', null, '4', '否', '2024-11-04');
-INSERT INTO study.course (id, img, name, content, type, video, file, recommend, time) VALUES (8, 'http://localhost:9090/files/1730735805982-1730360835130-a621e48ac745f739f8c5b71b515bf390_6511269016252122211.jpg', '5', '<p>5</p>', 'TEXT', null, '5', '否', '2024-11-04');
+INSERT INTO study.course (id, img, name, content, type, video, file, recommend, time) VALUES (8, 'http://localhost:9090/files/1730796624289-微信图片_20240624091638.jpg', '5', '<p>5</p>', 'TEXT', null, '5', '否', '2024-11-04');
 INSERT INTO study.course (id, img, name, content, type, video, file, recommend, time) VALUES (9, 'http://localhost:9090/files/1730735826128-1730735751857-1730364199955-aLSjg4qVu0WDw9N.jpg', '6', '<p>6</p>', 'TEXT', null, '6', '否', '2024-11-04');
 INSERT INTO study.course (id, img, name, content, type, video, file, recommend, time) VALUES (10, 'http://localhost:9090/files/1730735852204-IMG_20220602_180327.jpg', '晶体光学', '<p><img src="http://localhost:9090/files/1730735870232-IMG_20220602_180259.jpg" style="max-width:100%;" contenteditable="false"/><img src="http://localhost:9090/files/1730735879490-IMG_20220602_180327.jpg" style="max-width:100%;" contenteditable="false"/></p>', 'TEXT', null, '7', '否', '2024-11-04');
 INSERT INTO study.course (id, img, name, content, type, video, file, recommend, time) VALUES (11, 'http://localhost:9090/files/1730735901206-1000轮.jpg', '数学建模', '<p><img src="http://localhost:9090/files/1730735920495-微信截图_20220824194758.png" style="max-width:100%;" contenteditable="false"/><img src="http://localhost:9090/files/1730735925279-微信截图_20220824203238.png" style="max-width:100%;" contenteditable="false"/><img src="http://localhost:9090/files/1730735931880-微信截图_20220905224245.png" style="max-width:100%;" contenteditable="false"/></p>', 'TEXT', null, '8', '否', '2024-11-04');
