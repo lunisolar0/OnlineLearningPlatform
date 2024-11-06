@@ -14,4 +14,4 @@ create table admin
                      collate = utf8mb4_unicode_ci
                      row_format = DYNAMIC;
 
-INSERT INTO study.admin (id, username, password, name, avatar, role, phone, email) VALUES (1, 'admin', 'admin', '小杨', 'http://localhost:9090/files/1730735120774-Image_1716136986400.jpg', 'ADMIN', '18033733892', '1366036220@qq.com');
+INSERT INTO study.admin (id, username, password, name, avatar, role, phone, email) VALUES (1, 'admin', 'admin', '小杨', 'http://localhost:9090/files/1730886007200-Image_1716136986400.jpg', 'ADMIN', '18033733892', '1366036220@qq.com');

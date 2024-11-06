@@ -11,5 +11,3 @@ create table notice
     comment '公告信息表' engine = InnoDB
                          collate = utf8mb4_unicode_ci;
 
-INSERT INTO study.notice (id, title, content, time, user, confirm_count) VALUES (1, '111', '11111', '2024-10-31', 'admin', 0);
-INSERT INTO study.notice (id, title, content, time, user, confirm_count) VALUES (2, '我要玩原神', '我要玩原神', '2024-11-04', 'admin', 13);

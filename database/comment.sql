@@ -11,7 +11,5 @@ create table comment
     comment '评论信息表' engine = InnoDB
                          collate = utf8mb4_unicode_ci;
 
-INSERT INTO study.comment (id, user_id, course_id, time, content, parent_id) VALUES (35, 1, 4, '2024-11-04 23:53:02', '好看', 0);
-INSERT INTO study.comment (id, user_id, course_id, time, content, parent_id) VALUES (36, 1, 4, '2024-11-04 23:53:15', '豪堪', 35);
-INSERT INTO study.comment (id, user_id, course_id, time, content, parent_id) VALUES (37, 1, 4, '2024-11-05 00:05:08', '非常好视频，使我旋转', 0);
-INSERT INTO study.comment (id, user_id, course_id, time, content, parent_id) VALUES (38, 1, 12, '2024-11-05 00:05:47', '尼玛的一刀给哥们砍shi了', 0);
+INSERT INTO study.comment (id, user_id, course_id, time, content, parent_id) VALUES (43, 2, 14, '2024-11-06 18:28:56', '继续训练', 0);
+INSERT INTO study.comment (id, user_id, course_id, time, content, parent_id) VALUES (44, 2, 14, '2024-11-06 18:29:02', '兄弟们', 0);
