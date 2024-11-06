@@ -50,7 +50,8 @@ export default {
   data() {
     return {
       carouselData: [
-        require('@/assets/imgs/da4a9058921d7a2ea96e625c8c940e87.png'),
+        require('@/assets/imgs/1.png'),
+        require('@/assets/imgs/2.png'),
       ],
       recommend: {},
       rightData: [],
